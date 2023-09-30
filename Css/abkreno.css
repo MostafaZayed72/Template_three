@@ -1,10 +1,10 @@
 /* Start Global Rules */
 :root{
-    --main-color:#E55DBF;
-    --alternative-color: #1787e0;
+    --main-color:#106746;
+    --alternative-color: #054d81;
     --section-padding : 100px;
     --main-transition-duration: 1s;
-    --abkar-color:rgb(226, 231, 233);
+    --abkar-color:rgb(219, 215, 215);
 }
 * {
     -webkit-box-sizing: border-box;
@@ -16,9 +16,10 @@ html{
 }
 body{
     font-family: 'Cairo', sans-serif;
+    background-color: rgb(219, 215, 215);
 }
 .main-title{
-margin: 100px auto;
+margin: 0 auto 80px;
 border: 2px solid black;
 padding: 10px 20px;
 font-size: 30px;
@@ -252,7 +253,7 @@ left: 0;
 top: -30px;
 width: 100%;
 height: 100%;
-background-color: #be128e;
+background-color: #054d81;
 z-index: -1;
 transform: skewY(-6deg);
 transform-origin: top left;
@@ -301,7 +302,7 @@ max-width: 500px;
 }
 .landing .image img{
     position: relative;
-    width: 350px;
+    width: 450px;
     max-width: 100%;
     animation: up-and-down 5s linear infinite;
 }
@@ -320,7 +321,7 @@ transition: var(--main-transition-duration);
 
 }
 .landing .go-down:hover {
-color: rgb(4, 141, 34);
+color: #F89D1B;
 }
 .landing .go-down i {
     animation: bouncing 3s infinite ;
@@ -331,13 +332,48 @@ bottom: 10px;    }
 }
 
 /* End Landing */
+/* Start Articles */
+.articles{
+padding-top:var(--section-padding) ;
+padding-bottom: var(--section-padding);
+position: relative;
+}
+.articles .container{
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+gap: 40px;
+}
+.articles .box{
+box-shadow: 0 2px 15px rgba(0, 0, 0, 0.411) ;
+background-color: var(--abkar-color);
+border-radius:6px ;
+overflow: hidden;
+transition: transform var(--main-transition-duration), box-shadow var(--main-transition-duration);
+}
+.articles .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.822) ;
+}
+.articles .box img{
+height: 250px;
+width: 290px;
+max-width: 100%;
+}
+.articles .box .content{
+
+}
+.articles .box .info{
+
+}
+
+/* End Articles */
 /* Start Animation */
 @keyframes up-and-down {
     0%, 100% {
-        top: 0;
+        top: 40px;
     }
     50%{
-        top: -50px;
+        top: -30px;
     }
 }
 @keyframes bouncing {
@@ -370,6 +406,5 @@ bottom: 10px;    }
         height: 100%;
     }
 }
-
 /* End Animation */
 
