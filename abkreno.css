@@ -1457,6 +1457,7 @@ padding: 70px 0 0;
     .footer {
       text-align: center;
     }
+}
 .footer .container{
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -1474,6 +1475,7 @@ display: flex;
     .footer .box .social {
       justify-content: center;
     }
+}
 .footer .box .social li{
 margin-right: 10px;
 }
@@ -1534,7 +1536,7 @@ color: var(--main-color);
     .footer .box .line {
       flex-direction: column;
     }
-  
+}
 .footer .box .line > i{
 font-size: 25px;
 color:var(--main-color) ;
@@ -1545,7 +1547,7 @@ margin-right: 10px;
       margin-right: 0;
       margin-bottom: 15px;
     }
-  
+}
 .footer .box .line .info{
 line-height: 1.7;
 }
